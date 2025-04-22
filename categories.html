@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori - BookHub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar (same as index.html) -->
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light py-3">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Kategori</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Categories Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Semua Kategori Buku</h2>
+            
+            <div class="row g-4">
+                <!-- Category 1 -->
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="card category-card h-100">
+                        <a href="#" class="text-decoration-none">
+                            <img src="assets/img/cat-fiction.jpg" class="card-img-top" alt="Fiksi">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Fiksi</h5>
+                                <p class="card-text text-muted small">125 buku</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Repeat similar category cards for 11 more categories -->
+            </div>
+            
+            <!-- Subcategories for Fiction -->
+            <div class="mt-5">
+                <h3 class="mb-4">Subkategori Fiksi</h3>
+                <div class="row">
+                    <div class="col-md-3 col-6 mb-3">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card bg-light">
+                                <div class="card-body text-center">
+                                    <h6 class="card-title mb-0">Fiksi Sastra</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- More subcategories -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tags -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">Tag Populer</h3>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <a href="#" class="btn btn-outline-primary btn-sm">Bestseller</a>
+                <a href="#" class="btn btn-outline-primary btn-sm">Baru</a>
+                <a href="#" class="btn btn-outline-primary btn-sm">Diskon</a>
+                <!-- More tags -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+</body>
+</html>

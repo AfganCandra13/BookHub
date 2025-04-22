@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - BookHub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar (same as index.html) -->
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light py-3">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Produk</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Product Listing -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <!-- Sidebar Filters -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Filter</h5>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="fw-bold">Kategori</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="catFiction">
+                                <label class="form-check-label" for="catFiction">Fiksi</label>
+                            </div>
+                            <!-- More category checkboxes -->
+                            
+                            <hr>
+                            
+                            <h6 class="fw-bold">Harga</h6>
+                            <div class="row g-2">
+                                <div class="col">
+                                    <input type="number" class="form-control" placeholder="Min">
+                                </div>
+                                <div class="col">
+                                    <input type="number" class="form-control" placeholder="Max">
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            
+                            <h6 class="fw-bold">Penulis</h6>
+                            <select class="form-select mb-3">
+                                <option selected>Semua Penulis</option>
+                                <option>James Clear</option>
+                                <option>J.K. Rowling</option>
+                                <!-- More authors -->
+                            </select>
+                            
+                            <button class="btn btn-primary w-100">Terapkan Filter</button>
+                            <button class="btn btn-outline-secondary w-100 mt-2">Reset</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Best Sellers -->
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Terlaris</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex mb-3">
+                                <img src="assets/img/book1.jpg" class="rounded me-3" width="60" alt="Buku 1">
+                                <div>
+                                    <h6 class="mb-1">Atomic Habits</h6>
+                                    <div class="text-warning small">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="text-primary fw-bold">Rp 120.000</span>
+                                </div>
+                            </div>
+                            <!-- More best seller items -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-9">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2 class="mb-0">Semua Produk</h2>
+                        <div class="d-flex">
+                            <div class="me-3">
+                                <label class="form-label">Urutkan</label>
+                                <select class="form-select">
+                                    <option>Terbaru</option>
+                                    <option>Harga Terendah</option>
+                                    <option>Harga Tertinggi</option>
+                                    <option>Rating Tertinggi</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="form-label">Tampilkan</label>
+                                <select class="form-select">
+                                    <option>12</option>
+                                    <option>24</option>
+                                    <option>48</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <!-- Product Card 1 -->
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="card product-card h-100">
+                                <span class="badge bg-success position-absolute top-0 end-0 m-2">Diskon</span>
+                                <img src="assets/img/book1.jpg" class="card-img-top" alt="Buku 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Atomic Habits</h5>
+                                    <p class="card-text text-muted">James Clear</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fw-bold text-primary">Rp 120.000</span>
+                                        <span class="text-decoration-line-through text-muted">Rp 150.000</span>
+                                    </div>
+                                    <div class="text-warning small mt-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span class="text-muted ms-1">(24)</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent">
+                                    <button class="btn btn-primary w-100">Tambah ke Keranjang</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Repeat similar product cards for 11 more books -->
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Sebelumnya</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Selanjutnya</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+</body>
+</html>

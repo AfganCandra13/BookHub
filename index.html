@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHub - Toko Buku Online</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">BookHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Kategori</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="#" class="btn btn-light position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cari Buku</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Judul buku, penulis, atau kategori">
+                        <button class="btn btn-primary" type="button">Cari</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Slider -->
+    <div id="heroCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/slide3.jpg" class="d-block w-100" alt="Promo 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Gratis Ongkir</h5>
+                    <p>Gratis ongkir untuk pembelian di atas Rp 200.000</p>
+                    <a href="#" class="btn btn-primary">Syarat & Ketentuan</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Featured Categories -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Kategori Populer</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <a href="#" class="card category-card text-decoration-none">
+                        <img src="fiksi.jpg" class="card-img-top" alt="Fiksi">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fiksi</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#" class="card category-card text-decoration-none">
+                        <img src="sains.jpg" class="card-img-top" alt="Sains">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sains</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#" class="card category-card text-decoration-none">
+                        <img src="bisnis.jpg" class="card-img-top" alt="Bisnis">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bisnis</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#" class="card category-card text-decoration-none">
+                        <img src="anak.jpg" class="card-img-top" alt="Anak-Anak">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Anak-Anak</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="categories.html" class="btn btn-outline-primary">Lihat Semua Kategori</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Buku Baru</h2>
+                <a href="products.html" class="btn btn-sm btn-outline-primary">Lihat Semua</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card product-card h-100">
+                        <span class="badge bg-danger position-absolute top-0 end-0 m-2">Baru</span>
+                        <img src="Atomic.jpg" class="card-img-top" alt="Buku 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Atomic Habits</h5>
+                            <p class="card-text text-muted">James Clear</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">Rp 120.000</span>
+                                <span class="text-decoration-line-through text-muted">Rp 150.000</span>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100">Tambah ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar product cards for 3 more books -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Apa Kata Pelanggan Kami</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="assets/img/user1.jpg" class="rounded-circle mb-3" width="80" alt="User 1">
+                            <p class="card-text">"Pelayanan cepat dan buku yang dikirim dalam kondisi baik. Sangat memuaskan!"</p>
+                            <div class="text-warning mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="card-title">Budi Santoso</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar testimonial cards for 2 more users -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2>Berlangganan Newsletter</h2>
+                    <p class="mb-4">Dapatkan informasi promo dan buku baru langsung ke email Anda</p>
+                    <form class="row g-2 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" placeholder="Alamat email Anda">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-light w-100">Berlangganan</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <h5 class="fw-bold mb-3">BookHub</h5>
+                    <p>Toko buku online terlengkap dengan harga terjangkau dan pelayanan terbaik.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="fw-bold mb-3">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Beranda</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-white text-decoration-none">Produk</a></li>
+                        <li class="mb-2"><a href="categories.html" class="text-white text-decoration-none">Kategori</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none">Tentang Kami</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="fw-bold mb-3">Layanan Pelanggan</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Cara Berbelanja</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Pengiriman</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Pembayaran</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Pengembalian</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="fw-bold mb-3">Kontak Kami</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Jl. Buku No. 123, Jakarta</li>
+                        <li class="mb-2"><i class="fas fa-phone-alt me-2"></i> (021) 12345678</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@bookhub.com</li>
+                        <li class="mb-2"><i class="fas fa-clock me-2"></i> Buka setiap hari 09:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 BookHub. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Metode Pembayaran: 
+                        <i class="fab fa-cc-visa ms-2"></i>
+                        <i class="fab fa-cc-mastercard ms-2"></i>
+                        <i class="fab fa-cc-paypal ms-2"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
